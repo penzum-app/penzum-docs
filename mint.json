@@ -1,0 +1,163 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Penzum Súgó",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "favicon": "/favicon.ico",
+  "colors": {
+    "primary": "#10B981",
+    "light": "#34D399",
+    "dark": "#059669"
+  },
+  "topbarLinks": [
+    { "name": "penzum.app", "url": "https://penzum.app" }
+  ],
+  "topbarCtaButton": {
+    "name": "Belépés",
+    "url": "https://penzum.app/login"
+  },
+  "tabs": [
+    { "name": "Magyar", "url": "hu" },
+    { "name": "English", "url": "en" }
+  ],
+  "anchors": [],
+  "navigation": [
+    {
+      "group": "Kezdeti lépések",
+      "pages": [
+        "hu/intro",
+        "hu/setup",
+        "hu/adoforma",
+        "hu/csomagok"
+      ]
+    },
+    {
+      "group": "Dashboard",
+      "pages": [
+        "hu/dashboard",
+        "hu/tipp",
+        "hu/hirek"
+      ]
+    },
+    {
+      "group": "Bevételek",
+      "pages": [
+        "hu/bevetelek",
+        "hu/szamlazzhu",
+        "hu/billingo",
+        "hu/manualis-szamla"
+      ]
+    },
+    {
+      "group": "Kiadások",
+      "pages": [
+        "hu/kiadasok",
+        "hu/kategoriak"
+      ]
+    },
+    {
+      "group": "Bank",
+      "pages": [
+        "hu/bank",
+        "hu/tranzakciok"
+      ]
+    },
+    {
+      "group": "Adókalkulátor",
+      "pages": [
+        "hu/kalkulator",
+        "hu/atalany",
+        "hu/kata"
+      ]
+    },
+    {
+      "group": "AI Tanácsadó",
+      "pages": [
+        "hu/ai-tanacsado"
+      ]
+    },
+    {
+      "group": "Kötelezettségek",
+      "pages": [
+        "hu/kotelezettsegek"
+      ]
+    },
+    {
+      "group": "Fiók és előfizetés",
+      "pages": [
+        "hu/elofizetes",
+        "hu/adatok-torlese"
+      ]
+    },
+    {
+      "group": "Getting Started",
+      "pages": [
+        "en/intro",
+        "en/setup",
+        "en/tax-form",
+        "en/plans"
+      ]
+    },
+    {
+      "group": "Dashboard",
+      "pages": [
+        "en/dashboard",
+        "en/tip",
+        "en/news"
+      ]
+    },
+    {
+      "group": "Income",
+      "pages": [
+        "en/income",
+        "en/szamlazzhu",
+        "en/billingo",
+        "en/manual-invoice"
+      ]
+    },
+    {
+      "group": "Expenses",
+      "pages": [
+        "en/expenses",
+        "en/categories"
+      ]
+    },
+    {
+      "group": "Bank",
+      "pages": [
+        "en/bank",
+        "en/transactions"
+      ]
+    },
+    {
+      "group": "Tax Calculator",
+      "pages": [
+        "en/calculator",
+        "en/flat-rate-tax",
+        "en/kata"
+      ]
+    },
+    {
+      "group": "AI Advisor",
+      "pages": [
+        "en/ai-advisor"
+      ]
+    },
+    {
+      "group": "Obligations",
+      "pages": [
+        "en/obligations"
+      ]
+    },
+    {
+      "group": "Account & Billing",
+      "pages": [
+        "en/plans",
+        "en/delete-data"
+      ]
+    }
+  ],
+  "footerSocials": {}
+}
