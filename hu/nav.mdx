@@ -13,28 +13,55 @@ A NAV Online Számla integráció lehetővé teszi, hogy a Penzum közvetlenül 
 
 - Nem kell manuálisan rögzíteni a bevételeket
 - Minden NAV-ba bejelentett számla automatikusan megjelenik
-- A bejövő (kiadásként szereplő) számlák is szinkronizálódnak
-- Párhuzamosan használható Számlázz.hu vagy Billingo összekötéssel
+- A bejövő (neked kiállított) számlák is szinkronizálódnak kiadásként
+- Párhuzamosan is futhat Számlázz.hu vagy Billingo összekötéssel, de csak egy forrás lehet aktív egyszerre
 
-## Technikai felhasználó létrehozása
+## 1. lépés — Technikai felhasználó létrehozása
 
-A Penzum egy **technikai felhasználón** keresztül csatlakozik a NAV Online Számla rendszeréhez. Ezt te hozod létre:
+A Penzum egy **technikai felhasználón** keresztül csatlakozik a NAV Online Számla rendszerhez. Ezt te hozod létre, és kizárólag olvasási hozzáférést ad.
 
-1. Lépj be az [onlineszamla.nav.gov.hu](https://onlineszamla.nav.gov.hu) oldalra
-2. Menj a **Felhasználók kezelése** → **Technikai felhasználó** menüpontra
-3. Hozz létre egy új technikai felhasználót
-4. Mentsd el a következő adatokat:
+1. Lépj be a **[onlineszamla.nav.gov.hu](https://onlineszamla.nav.gov.hu)** oldalra a saját NAV-azonosítóddal
+2. A felső menüsorban válaszd a **Felhasználók** menüpontot
+3. Kattints a **Technikai felhasználó létrehozása** gombra
+4. Adj meg egy tetszőleges nevet (pl. „Penzum"), majd kattints a **Mentés** gombra
+5. A rendszer generál négy kulcsot — töltsd le vagy másold ki mindegyiket:
+   - **XML alárókulcs** (xmlSignatureKey)
+   - **XML cserekulcs** (xmlExchangeKey)
    - **Felhasználónév** (login)
-   - **Jelszó**
-   - **XML alárókulcs**
-   - **XML cserekulcs**
+   - **Jelszó** (password)
 
-## Összekötés lépései
+<Warning>
+  A jelszó és a kulcsok csak egyszer láthatók — azonnal mentsd el őket biztonságos helyre, mert a NAV nem jeleníti meg újra.
+</Warning>
 
-1. Nyisd meg a **Beállítások → NAV Online Számla** menüpontot
-2. Add meg a technikai felhasználó adatait
-3. Kattints a **Kapcsolat tesztelése** gombra — ha sikeres, a Penzum azonnal elindít egy teljes éves szinkront
-4. Az integrációt aktiválja a rendszer, és naponta automatikusan szinkronizál
+### Szükséges jogosultságok
+
+A technikai felhasználóhoz a következő jogosultságokat kell beállítani (a létrehozás után a **Jogosultságok** fülön):
+
+| Jogosultság | Szükséges |
+|---|:---:|
+| Számla adatszolgáltatás lekérdezése | ✓ |
+| Beérkezett számlák lekérdezése | ✓ |
+
+Módosítási vagy beküldési jogosultság **nem szükséges** — a Penzum kizárólag olvas.
+
+## 2. lépés — Összekötés a Penzumban
+
+A technikai felhasználó adatait kétféleképpen viheted be a Penzumba:
+
+### QR kóddal (ajánlott)
+
+1. A NAV portálon a technikai felhasználó részleteinél kattints a **QR kód generálása** gombra
+2. A Penzum Beállítások oldalán kattints a **QR kód beolvasása** gombra
+3. Tartsd a NAV portál QR kódját a kamera elé — az adatok automatikusan kitöltődnek
+
+### Manuálisan
+
+1. Nyisd meg a **Beállítások → Online számlázói és banki integrációk** menüpontot
+2. Válaszd a **NAV Online Számla** forrást
+3. Kattints a **Manuális megadás** gombra
+4. Töltsd ki a négy mezőt a NAV portálról kimásolt adatokkal
+5. Kattints a **Kapcsolat tesztelése** gombra — sikeres teszt esetén az összekötés aktiválódik
 
 ## Szinkronizálás
 
@@ -49,8 +76,8 @@ A kézi **Szinkronizálás most** gombbal bármikor frissítheted az adatokat.
 
 ## Adatbiztonság
 
-A technikai felhasználó adatait a Penzum titkosítva tárolja. A csatlakozás kizárólag lekérdezési jogosultsággal rendelkezik — adatmódosítást nem végez a NAV rendszerében.
+A technikai felhasználó kulcsait a Penzum titkosítva tárolja. A csatlakozás kizárólag lekérdezési jogosultsággal rendelkezik — adatmódosítást nem végez a NAV rendszerében.
 
 ## Kapcsolat bontása
 
-A **Beállítások → NAV Online Számla** menüpontban bármikor megszüntetheted a kapcsolatot. A már szinkronizált számlák megmaradnak.
+A **Beállítások → Online számlázói és banki integrációk** menüpontban bármikor megszüntetheted a kapcsolatot — válts másik forrásra, vagy válaszd a **Kézi rögzítés** opciót. A már szinkronizált számlák megmaradnak.

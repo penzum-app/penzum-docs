@@ -7,34 +7,61 @@ description: Sync outgoing and incoming invoices directly from the Hungarian tax
   NAV Online Invoice sync is available on the **Navigator** plan.
 </Info>
 
-The NAV Online Invoice integration allows Penzum to pull your issued and received invoices directly from the Hungarian tax authority's database — regardless of which invoicing software you use.
+The NAV Online Invoice integration allows Penzum to pull your issued and received invoices directly from the Hungarian tax authority's (NAV) database — regardless of which invoicing software you use.
 
 ## Why use it?
 
 - No manual income entry required
 - All NAV-registered invoices sync automatically
-- Incoming invoices (expenses) are also synced
-- Works alongside Számlázz.hu or Billingo integrations
+- Incoming invoices issued to you also sync as expenses
+- Can coexist with Számlázz.hu or Billingo, but only one source can be active at a time
 
-## Creating a Technical User
+## Step 1 — Create a Technical User
 
-Penzum connects to NAV Online Invoice via a **technical user** that you create:
+Penzum connects via a **technical user** that you create in NAV's system. It grants read-only access.
 
-1. Log in at [onlineszamla.nav.gov.hu](https://onlineszamla.nav.gov.hu)
-2. Go to **User Management** → **Technical User**
-3. Create a new technical user
-4. Save the following credentials:
+1. Log in at **[onlineszamla.nav.gov.hu](https://onlineszamla.nav.gov.hu)** with your NAV credentials
+2. In the top menu, select **Felhasználók** (Users)
+3. Click **Technikai felhasználó létrehozása** (Create Technical User)
+4. Enter a name (e.g. "Penzum") and click **Mentés** (Save)
+5. The system generates four credentials — copy or download all of them:
+   - **XML signature key** (xmlSignatureKey)
+   - **XML exchange key** (xmlExchangeKey)
    - **Username** (login)
    - **Password**
-   - **XML signature key**
-   - **XML exchange key**
 
-## Connection Steps
+<Warning>
+  The password and keys are shown only once — save them immediately in a secure location, as NAV will not display them again.
+</Warning>
 
-1. Open **Settings → NAV Online Invoice**
-2. Enter the technical user credentials
-3. Click **Test Connection** — if successful, Penzum immediately starts a full-year sync
-4. The integration activates and syncs automatically every day
+### Required Permissions
+
+After creating the technical user, set the following permissions on the **Jogosultságok** (Permissions) tab:
+
+| Permission | Required |
+|---|:---:|
+| Invoice data query (Számla adatszolgáltatás lekérdezése) | ✓ |
+| Incoming invoice query (Beérkezett számlák lekérdezése) | ✓ |
+
+No modification or submission permissions are needed — Penzum only reads.
+
+## Step 2 — Connect in Penzum
+
+You can enter the technical user credentials in two ways:
+
+### QR Code (recommended)
+
+1. On the NAV portal, open the technical user details and click **QR kód generálása** (Generate QR Code)
+2. In Penzum's Settings, click **QR kód beolvasása** (Scan QR Code)
+3. Hold the NAV portal QR code up to the camera — the fields fill in automatically
+
+### Manual Entry
+
+1. Open **Settings → Online invoicing and bank integrations**
+2. Select **NAV Online Invoice** as the source
+3. Click **Manuális megadás** (Manual entry)
+4. Fill in the four fields with the credentials from the NAV portal
+5. Click **Test Connection** — on success, the integration activates
 
 ## Sync Types
 
@@ -53,4 +80,4 @@ Technical user credentials are stored encrypted. The connection is read-only —
 
 ## Disconnecting
 
-You can disconnect at any time from **Settings → NAV Online Invoice**. Already-synced invoices are retained.
+You can disconnect at any time under **Settings → Online invoicing and bank integrations** — switch to another source or select **Manual entry**. Already-synced invoices are retained.
