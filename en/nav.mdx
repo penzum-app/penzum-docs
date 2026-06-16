@@ -1,0 +1,56 @@
+---
+title: NAV Online Invoice Connection
+description: Sync outgoing and incoming invoices directly from the Hungarian tax authority
+---
+
+<Info>
+  NAV Online Invoice sync is available on the **Navigator** plan.
+</Info>
+
+The NAV Online Invoice integration allows Penzum to pull your issued and received invoices directly from the Hungarian tax authority's database — regardless of which invoicing software you use.
+
+## Why use it?
+
+- No manual income entry required
+- All NAV-registered invoices sync automatically
+- Incoming invoices (expenses) are also synced
+- Works alongside Számlázz.hu or Billingo integrations
+
+## Creating a Technical User
+
+Penzum connects to NAV Online Invoice via a **technical user** that you create:
+
+1. Log in at [onlineszamla.nav.gov.hu](https://onlineszamla.nav.gov.hu)
+2. Go to **User Management** → **Technical User**
+3. Create a new technical user
+4. Save the following credentials:
+   - **Username** (login)
+   - **Password**
+   - **XML signature key**
+   - **XML exchange key**
+
+## Connection Steps
+
+1. Open **Settings → NAV Online Invoice**
+2. Enter the technical user credentials
+3. Click **Test Connection** — if successful, Penzum immediately starts a full-year sync
+4. The integration activates and syncs automatically every day
+
+## Sync Types
+
+| Type | Direction | Appears in |
+|---|---|---|
+| Outgoing invoices | OUTBOUND | Income page |
+| Incoming invoices | INBOUND | Expenses page |
+
+The first sync pulls all invoices for the current calendar year. After that, a daily automatic sync runs for changes since the last sync.
+
+Use the **Sync now** button to refresh data at any time.
+
+## Security
+
+Technical user credentials are stored encrypted. The connection is read-only — Penzum never modifies data in the NAV system.
+
+## Disconnecting
+
+You can disconnect at any time from **Settings → NAV Online Invoice**. Already-synced invoices are retained.

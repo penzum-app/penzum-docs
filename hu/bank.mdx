@@ -4,12 +4,16 @@ description: Automatikus tranzakció-import bankszámládról
 ---
 
 <Info>
-  A bankszámla-összekötés **Navigator** csomagban érhető el.
+  A bankszámla-összekötés **Navigator** csomagban lesz elérhető — jelenleg fejlesztés alatt áll.
 </Info>
+
+<Warning>
+  Ez a funkció hamarosan érkezik. Az alábbi leírás a tervezett működést mutatja be.
+</Warning>
 
 A Penzum **kizárólag olvasási hozzáféréssel** csatlakozik a bankszámládhoz — semmilyen tranzakciót nem kezdeményez.
 
-## Összekötés lépései
+## Tervezett összekötés lépései
 
 1. Menj a **Beállítások → Kapcsolatok** menüpontra
 2. Kattints a **Bankszámla** sorra
@@ -19,12 +23,14 @@ A Penzum **kizárólag olvasási hozzáféréssel** csatlakozik a bankszámládh
 
 ## Támogatott bankok
 
-A Penzum az európai Open Banking szabvány alapján csatlakozik a bankokhoz. A teljes lista a beállítások között tekinthető meg.
+A Penzum az európai Open Banking szabvány alapján csatlakozik a bankokhoz — OTP, CIB, K&H, Erste, Raiffeisen, MBH, MagNet, Gránit, UniCredit és további bankok.
 
 ## Adatbiztonság
 
 A banki hozzáférés egy szabályozott, auditált kapcsolaton keresztül történik. A Penzum nem tárolja a banki bejelentkezési adataidat.
 
-## Kapcsolat bontása
+## Alternatíva: CSV import
 
-A **Beállítások → Kapcsolatok** menüpontban bármikor megszüntetheted a banki hozzáférést. A már importált tranzakciók megmaradnak.
+Amíg az automatikus bank szinkron nem elérhető, a bankszámlakivonátodat CSV formátumban manuálisan importálhatod.
+
+- [CSV import →](/hu/tranzakciok)

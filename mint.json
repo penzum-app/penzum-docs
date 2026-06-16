@@ -48,6 +48,7 @@
           "group": "Bevételek",
           "pages": [
             "hu/bevetelek",
+            "hu/nav",
             "hu/szamlazzhu",
             "hu/billingo",
             "hu/manualis-szamla"
@@ -120,6 +121,7 @@
           "group": "Income",
           "pages": [
             "en/income",
+            "en/nav",
             "en/szamlazzhu",
             "en/billingo",
             "en/manual-invoice"
