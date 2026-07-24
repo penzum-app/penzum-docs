@@ -1,0 +1,33 @@
+---
+title: Pénztárkönyv
+description: Készpénzes bevételek és kiadások nyilvántartása
+---
+
+A pénztárkönyv a készpénzes bevételek és kiadások törvény által előírt (SZJA tv. 5. melléklet) nyilvántartása. A Penzumban ez **automatikusan** épül fel — nincs külön "új pénztárkönyv-tétel" gomb.
+
+## Bekapcsolás
+
+A **Beállítások → Pénztárkönyv** szakaszban található a **Pénztárkönyv funkció bekapcsolása** jelölőnégyzet.
+
+<Info>
+  VSZJA (vállalkozói SZJA) adóformánál a pénztárkönyv automatikusan bekapcsol — más adóformáknál csak akkor szükséges, ha van készpénzes bevételed vagy kiadásod. Ha nincs, hagyd kikapcsolva: ekkor nem is jelenik meg a menüben.
+</Info>
+
+Bekapcsoláskor megadhatod a **nyitó kasszaegyenleget** (az év eleji, vagy a nyilvántartás kezdetén meglévő készpénz összege) — ha 0-ról indulsz, hagyd üresen.
+
+## Hogyan kerül be egy tétel?
+
+Nincs önálló rögzítő űrlap — egy tétel onnan kerül a pénztárkönyvbe, hogy egy számla kifizetésénél vagy egy kiadás rögzítésénél a fizetési módnál a **Készpénz** opciót választod:
+
+- Bevétel: kifizetett (fizetve jelölt) számla, ahol a fizetési mód Készpénz
+- Kiadás: rögzített kiadás, ahol a fizetési mód Készpénz
+
+## Megjelenítés
+
+A `/cash-book` oldalon (`?year=` paraméterrel évet is választhatsz, 2023-tól) a tételek naponta csoportosítva jelennek meg: napi nyitóegyenleg, tételek (sorszám, leírás, ügyfél/szállító, bizonylatszám, összeg — zöld a bevétel, piros a kiadás), és napi záróegyenleg, ami folyamatosan viszi tovább a napi szaldót.
+
+Az oldal tetején összegző kártyák: **Nyitó pénzkészlet**, **Készpénzes bevétel**, **Készpénzes kiadás**, **Záró pénzkészlet**.
+
+## Nyomtatás
+
+A pénztárkönyv is exportálható PDF-be (böngésző nyomtatási funkcióján keresztül), jogszabályi hivatkozással és aláírás-sorral, ugyanúgy mint a [Riportok](/hu/riportok) oldal kimutatásai.

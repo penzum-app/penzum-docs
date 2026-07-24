@@ -1,0 +1,46 @@
+---
+title: Tárgyi eszközök
+description: Eszközök és értékcsökkenés nyilvántartása VSZJA esetén
+---
+
+<Info>
+  A Tárgyi eszközök nyilvántartás **vállalkozói SZJA (VSZJA)** adóformánál releváns.
+</Info>
+
+Ha egy vállalkozási célú eszköz beszerzési ára eléri vagy meghaladja a **200 000 Ft-ot**, azt a törvény szerint (SZJA tv. 11. sz. melléklet) nem lehet egy összegben elszámolni — évek alatt, **értékcsökkenés (ÉCS)** formájában írható le.
+
+## Hol találod?
+
+A **Nyilvántartások → Tárgyi eszközök** menüpont alatt, a `/nyilvantartasok/eszkozok` oldalon.
+
+## Új eszköz felvitele
+
+A **Új eszköz** gombra kattintva add meg:
+
+- **Megnevezés**
+- **Vásárlás dátuma**
+- **Bekerülési érték (Ft)**
+- **Értékcsökkenési kulcs** — négy gyorsgomb segít: 33% (IT eszköz), 20% (bútor, iroda), 14,5% (gép, autó), 2% (épület)
+- **Üzleti arány (%)** — ha az eszközt nem 100%-ban használod a vállalkozásban (pl. személygépkocsi), csúszkával állítható
+- **Megjegyzés** *(opcionális)*
+
+### AI kulcs-javaslat
+
+Amint elkezded gépelni az eszköz nevét, a Penzum megpróbálja kitalálni a helyes értékcsökkenési kulcsot — először egyszerű kulcsszó-egyezés alapján (pl. „laptop" → 33%), ha ez nem talál egyezést, egy AI-javaslat készül és automatikusan kitölti a mezőt (jelölve, hogy „Automatikus" vagy „AI javaslat" eredetű). A javasolt kulcsot bármikor felülírhatod.
+
+Az űrlap élőben mutatja a **becsült éves értékcsökkenést** (bekerülési érték × üzleti arány × kulcs).
+
+## Eszköz felvétele egy kiadásból
+
+Két helyről is indíthatod:
+
+1. **A Tárgyi eszközök oldalon** — a „Kiadásokból importálható eszközök" panel felsorolja azokat a 200 000 Ft feletti, még nem eszközzé alakított kiadásokat, amikre az **Importálás** gombbal előtöltheted az új eszköz űrlapot (a kulcsot és az üzleti arányt még meg kell adnod).
+2. **A Kiadások oldalon** — ha egy 200 000 Ft feletti kiadást rögzítesz VSZJA adóformánál, a Penzum felajánlja: „Ez a kiadás meghaladja a 200 000 Ft-os értékhatárt — érdemes felvenni a tárgyi eszközök közé." Ha elfogadod, a kiadás automatikusan **eszközzé alakul**, és kikerül a normál, egy összegben elszámolható kiadások közül — onnantól csak az évenkénti értékcsökkenés számít költségként.
+
+## Lista és nyomon követés
+
+Minden eszköznél látod a vásárlás dátumát, értékét, kulcsát, üzleti arányát (ha nem 100%), az adott évi értékcsökkenést, valamint egy **leírási sávot**, ami mutatja, hogy a bekerülési érték hány százaléka lett eddig leírva. Teljesen leírt eszközöknél ez „Teljesen leírva" jelzéssel jelenik meg, és onnantól nem termel további ÉCS-t.
+
+## Kapcsolódó oldalak
+
+Lásd még a [Kivét naplót](/hu/kivet-naplo) és a [Kiadások](/hu/kiadasok) oldalt.

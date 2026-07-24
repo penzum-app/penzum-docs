@@ -1,37 +1,38 @@
 ---
 title: Adókalkulátor
-description: Valós idejű adóteher-becslés
+description: Valós idejű adóteher-becslés, konkrét és szcenárió módban
 ---
 
-Az adókalkulátor a bevételeid és az adóformád alapján becsüli az éves adóterhedet. Az eredmény tájékoztató jellegű.
+Az adókalkulátor tetején egy **Konkrét / Szcenárió** váltókapcsoló található.
 
-## Mit mutat?
+## Konkrét mód
 
+A valós, rögzített bevételeid, kiadásaid és (ha van munkaviszonyod is) béradataid alapján becsüli az éves adóterhedet. Automatikusan frissül, ahogy új bevételek/kiadások kerülnek be — nem kell manuálisan számolni. Az aktuális értékek a Dashboard összesítőjén is láthatók.
+
+**Mit mutat?**
 - Becsült éves SZJA
 - TB-járulék és szociális hozzájárulás
 - Helyi iparűzési adó *(ha be van állítva)*
 - Teljes becsült adóteher
 
-## Hogyan frissül?
-
-Az adókalkulátor automatikusan frissül, ahogy új bevételek kerülnek be — nem kell manuálisan számolni. Az aktuális értékek a Dashboard összesítőjén is láthatók.
-
-## KATA adózók
+### KATA adózók
 
 Ha KATA-s EV vagy, a kalkulátor nem részletes levezetést mutat, hanem a fix adóterhedet:
 
-- Éves adóteher: **600 000 Ft** (12 × 50 000 Ft főállásban)
+- Éves adóteher: **600 000 Ft** (12 × 50 000 Ft, mert KATA csak főállásban választható)
 - Ez az összeg független a bevételtől — amíg a 18 millió Ft-os éves határon belül maradsz
 
-Ha szeretnéd összehasonlítani, hogyan alakulna az adóterhed átalányadóra váltás esetén, azt a **Navigator** csomag szcenárió-elemzőjében teheted meg.
+## Szcenárió mód
 
-## Szcenárió-elemzés *(Navigator)*
+A szcenárió-elemzőben tetszőlegesen módosíthatod a bevételt, az adóformát, az EV típust, a kiadásokat és a személyes körülményeket (gyerekek száma, fogyatékosság, életkor-alapú kedvezmények) — anélkül, hogy ez bármit megváltoztatna a valós adataidon. Ha bármelyik érték eltér a profilodtól, egy „Szcenárió" jelölés jelenik meg, és egy **Visszaállítás** gombbal bármikor visszatérhetsz a valós adataidhoz.
 
-<Info>
-  A szcenárió-elemzés **Navigator** csomagban érhető el.
-</Info>
+Hasznos például, ha meg szeretnéd nézni, hogyan alakulna az adóterhed más adóforma, más bevételi szint vagy eltérő EV típus esetén — de a végső döntést mindig szakemberrel hozd meg.
 
-A szcenárió-elemzőben összehasonlíthatod, hogyan alakulna az adóterhed különböző feltételek mellett — például más adóforma, más bevételi szint vagy eltérő EV típus esetén.
+A szcenárió-nézeten belül egy további **Összehasonlítás / Részletes** kapcsoló váltja a számítás megjelenítési módját.
+
+## Munkaviszony hatása a számításra
+
+Ha mellékállású EV vagy, és a [Munkaviszony](/hu/munkaviszony) oldalon rögzítetted a béradataidat, a kalkulátor automatikusan figyelembe veszi, hogy a munkáltatódnál mennyi családi/személyi adókedvezményt vettél már igénybe — így nem számol duplán, és a fennmaradó TB-terhedet is pontosabban vetíti.
 
 <Warning>
   A kalkulátor becslést nyújt, nem hivatalos adókötelezettség-megállapítást. A tényleges adóbefizetések előtt ellenőrizd az értékeket könyvelőddel.

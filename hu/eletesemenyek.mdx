@@ -1,0 +1,48 @@
+---
+title: Életesemények
+description: Adóügyi státuszváltozások naplózása
+---
+
+Az Életesemények oldalon (`/life-events`) rögzítheted azokat a változásokat, amik hatással vannak az adóügyi státuszodra — a Penzum ezek alapján automatikusan alkalmazza a megfelelő számítási logikát a Dashboardon, a Kalkulátorban és a Kötelezettségek naptárban.
+
+## Rögzíthető eseménytípusok
+
+Az oldal csak egy **zárt listából** enged eseményt rögzíteni:
+
+- **EV-típus váltás** (mellékállás ↔ főállás ↔ nyugdíjas)
+- **Adóforma-váltás** (átalányadó ↔ KATA ↔ VSZJA)
+- **Gyermek született** / **Eltartott megszűnt**
+- **Házasság** rögzítése
+- **Fogyatékosság** kezdete / vége
+- **GYED** kezdete / vége
+- **GYES** kezdete / vége
+- **Táppénz** kezdete / vége
+- **EV szüneteltetés** kezdete / vége
+
+<Info>
+  Az oldalon mindig csak a jelenlegi állapotod alapján releváns gombok jelennek meg — pl. „Házasság rögzítése" csak akkor, ha még nem vagy rögzítve házasként.
+</Info>
+
+## EV-típus váltás
+
+Dátum, új EV-típus (a jelenlegi kivételével), és opcionális megjegyzés. Amber figyelmeztetés jelzi, hogy a váltást a NAV felé is be kell jelentened — ezt a Penzum nem teszi meg helyetted.
+
+## Adóforma-váltás
+
+Dátum és az új adóforma megadása. **Fontos szabály:** ha KATA-ból vagy VSZJA-ból váltasz, vagy azokra váltasz, a hatálybalépés csak **január 1.** lehet — ha más dátumot választanál, a rendszer automatikusan január 1-jére állítja, és figyelmeztet erre.
+
+## Gyermek született / Eltartott megszűnt
+
+Dátum, opcionálisan jelölhető, ha a gyermek fogyatékkal él, és megjegyzés. Ez a bejegyzés frissíti az eltartottak számát, ami a családi adókedvezmény számításának alapja.
+
+## Házasság, Fogyatékosság, GYED, GYES, Táppénz, EV szüneteltetés
+
+Ezeknél egységesen dátumot és opcionális megjegyzést adhatsz meg. A házasság csak egyszer rögzíthető.
+
+## Napló
+
+Az oldal alján megjelenik minden korábban rögzített esemény időrendben, a hozzá tartozó állapotváltozással (pl. „Mellékállású → Főállású"), a dátummal és — ha releváns — egy figyelmeztetéssel, hogy szükséges-e hivatalos bejelentés is (pl. NAV felé).
+
+<Warning>
+  Az Életesemények **nem** helyettesíti a [Munkaviszony](/hu/munkaviszony) oldalt — ha egy másik cégnél fennálló munkaviszonyodról vagy annak megszűnéséről van szó, azt itt nem lehet rögzíteni, csak a Munkaviszony oldalon.
+</Warning>

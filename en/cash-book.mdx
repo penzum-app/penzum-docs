@@ -1,0 +1,33 @@
+---
+title: Cash Book
+description: Recording cash income and expenses
+---
+
+The cash book is the statutory record (SZJA Act, Annex 5) of your cash income and expenses. In Penzum, it's built up **automatically** — there's no separate "new cash-book entry" button.
+
+## Enabling it
+
+Under **Settings → Cash Book**, you'll find an **Enable Cash Book** checkbox.
+
+<Info>
+  Under the VSZJA (itemised entrepreneurial income tax) tax form, the cash book turns on automatically — for other tax forms, it's only needed if you have any cash income or expenses. If not, leave it off — it won't appear in the menu.
+</Info>
+
+When enabling it, you can also set an **opening cash balance** (the amount of cash on hand at the start of the year, or at the start of your records) — leave it blank if starting from zero.
+
+## How does an entry get in?
+
+There's no dedicated entry form — an item appears in the cash book because you selected **Cash** as the payment method when recording an invoice payment or an expense:
+
+- Income: a paid invoice with payment method set to Cash
+- Expense: a recorded expense with payment method set to Cash
+
+## Display
+
+On the `/cash-book` page (add `?year=` to pick a year, from 2023 onward), entries are grouped by day: the day's opening balance, line items (serial number, description, client/supplier, document reference, amount — green for income, red for expense), and a daily closing balance that carries forward.
+
+Summary cards at the top: **Opening balance**, **Cash income**, **Cash expenses**, **Closing balance**.
+
+## Printing
+
+The cash book can also be exported as a PDF (via your browser's print function), with the relevant legal citation and a signature line — the same mechanism as the [Reports](/en/reports) page.

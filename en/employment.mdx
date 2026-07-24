@@ -1,0 +1,44 @@
+---
+title: Employment
+description: Employer income and benefits for part-time sole traders
+---
+
+<Info>
+  The Employment page is for **part-time sole traders** — if you have an active employment contract alongside your sole-trader business.
+</Info>
+
+On the `/employment` page you can record your salary data from your employer and the tax benefits claimed there — so the [Tax Calculator](/en/calculator) can more accurately estimate your sole-trader social security burden, avoiding double-counting benefits.
+
+## Why does this matter?
+
+Your employer already withholds personal income tax (SZJA) and social security contribution (TB) from your salary — but certain tax benefits (e.g. the family benefit) can only be partially, or not at all, realized against your salary if the benefit exceeds the deductible tax. The unused portion can still be reclaimed in your annual personal SZJA return as a sole trader — this is called the **remainder**.
+
+## Monthly entry
+
+For each month (and, if you have multiple employers, per employer), enter:
+
+- **Gross salary (HUF)**
+- **Employer name** *(optional, defaults to "Main job")*
+- The benefits claimed that month — only benefits you're eligible for based on your profile are shown:
+  - **Personal benefit** (for disability)
+  - **First marriage benefit**
+  - **Family tax benefit** — adjustable with a slider for what percentage of the benefit you claim (if split with a partner)
+  - **Benefit for those under 25**
+  - **Mothers' SZJA benefit** — if eligible, the month's salary SZJA becomes fully 0%
+
+## What does the summary show?
+
+- **Total annual gross**
+- **Recorded months** (N/12)
+- **Benefit claimed** — how much benefit was actually realized against your salary
+- **Unclaimed benefit (remainder)** — this amount can be reclaimed in your annual personal SZJA return
+
+The part of the family benefit that no longer fits within your SZJA can spill over into your own social security contribution (18.5%) — shown as a separate "family social-security-contribution benefit" line. It never spills over into the social contribution tax, and personal-type benefits (disability, first marriage, youth) don't spill over into TB either.
+
+## Beneficiary children count
+
+The number of dependent children and the number of **beneficiary** children are two legally distinct concepts (SZJA Act §§29/A–29/B) — the former determines the benefit tier, the latter multiplies the amount. This is fine-tuned under **Settings → Personal Details**, not on this page.
+
+<Warning>
+  This page only appears for accounts set up as part-time sole traders. Full-time or retired sole traders don't need it.
+</Warning>

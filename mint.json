@@ -40,6 +40,7 @@
           "group": "Dashboard",
           "pages": [
             "hu/dashboard",
+            "hu/hogy-allok",
             "hu/tipp",
             "hu/hirek"
           ]
@@ -89,6 +90,17 @@
           ]
         },
         {
+          "group": "Nyilvántartások és riportok",
+          "pages": [
+            "hu/kivet-naplo",
+            "hu/targyi-eszkozok",
+            "hu/penztarkonyv",
+            "hu/munkaviszony",
+            "hu/eletesemenyek",
+            "hu/riportok"
+          ]
+        },
+        {
           "group": "Fiók és előfizetés",
           "pages": [
             "hu/elofizetes",
@@ -113,6 +125,7 @@
           "group": "Dashboard",
           "pages": [
             "en/dashboard",
+            "en/how-am-i-doing",
             "en/tip",
             "en/news"
           ]
@@ -162,9 +175,20 @@
           ]
         },
         {
+          "group": "Records & Reports",
+          "pages": [
+            "en/withdrawal-log",
+            "en/fixed-assets",
+            "en/cash-book",
+            "en/employment",
+            "en/life-events",
+            "en/reports"
+          ]
+        },
+        {
           "group": "Account & Billing",
           "pages": [
-            "en/plans",
+            "en/subscription",
             "en/delete-data"
           ]
         }

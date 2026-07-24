@@ -1,0 +1,46 @@
+---
+title: Fixed Assets
+description: Asset and depreciation records under VSZJA
+---
+
+<Info>
+  The Fixed Assets register applies to the **itemised entrepreneurial income tax (VSZJA)** tax form.
+</Info>
+
+If a business asset's purchase price reaches or exceeds **HUF 200,000**, it cannot be deducted in one go under Hungarian law (SZJA Act, Annex 11) — it must be depreciated over several years instead.
+
+## Where to find it
+
+Under **Records → Fixed Assets**, at the `/nyilvantartasok/eszkozok` page.
+
+## Adding a new asset
+
+Click **New Asset** and enter:
+
+- **Name**
+- **Purchase date**
+- **Purchase price (HUF)**
+- **Depreciation rate** — four quick-pick buttons help: 33% (IT equipment), 20% (furniture, office), 14.5% (machinery, vehicle), 2% (building)
+- **Business-use ratio (%)** — if the asset isn't used 100% for business (e.g. a car), adjust with the slider
+- **Note** *(optional)*
+
+### AI rate suggestion
+
+As you start typing the asset's name, Penzum tries to guess the correct depreciation rate — first via simple keyword matching (e.g. "laptop" → 33%), and if that finds no match, an AI suggestion is generated and fills the field automatically (labeled "Automatic" or "AI suggestion"). You can always override the suggested rate.
+
+The form shows a live-computed **estimated annual depreciation** (purchase price × business ratio × rate).
+
+## Adding an asset from an expense
+
+You can start this from two places:
+
+1. **On the Fixed Assets page** — the "Assets importable from expenses" panel lists expenses over HUF 200,000 that haven't been converted to an asset yet, with an **Import** button that pre-fills the new-asset form (you'll still need to set the rate and business ratio).
+2. **On the Expenses page** — when you record an expense over HUF 200,000 under the VSZJA tax form, Penzum offers: "This expense exceeds the HUF 200,000 threshold — consider adding it to your fixed assets." If you accept, the expense automatically **converts to an asset**, and is excluded from regular, one-time deductible expenses — from then on, only its yearly depreciation counts as a cost.
+
+## List and tracking
+
+Each asset shows its purchase date, value, rate, business ratio (if under 100%), this year's depreciation, and a **depreciation progress bar** showing what percentage of the purchase price has been written off so far. Fully depreciated assets show "Fully depreciated" and stop generating further depreciation.
+
+## Related pages
+
+See also [Withdrawal Log](/en/withdrawal-log) and [Expenses](/en/expenses).

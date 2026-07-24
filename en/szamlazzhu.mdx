@@ -1,6 +1,27 @@
 ---
-title: Coming soon
-description: This page is being translated.
+title: Connect Számlázz.hu
+description: Automatic invoice sync with Számlázz.hu
 ---
 
-This page is coming soon. See the [Hungarian version](/hu/szamlazzhu).
+## Connection steps
+
+1. Open **Settings → Connections**
+2. Click the **Számlázz.hu** row
+3. Paste the **Agent key** from your Számlázz.hu account
+4. After saving, the first sync starts automatically
+
+<Info>
+  You'll find your Agent key under **Settings → API** in Számlázz.hu.
+</Info>
+
+## How does the sync work?
+
+Once connected, Penzum periodically fetches your paid invoices. The first sync loads data starting from the beginning of the current calendar year.
+
+## Manually recorded invoices
+
+For invoices synced from Számlázz.hu, the **Mark as paid** button is disabled — the status is controlled by Számlázz.hu.
+
+## Disconnecting
+
+You can disconnect under **Settings → Connections**. Already-synced data is retained.

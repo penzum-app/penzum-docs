@@ -1,0 +1,48 @@
+---
+title: Life Events
+description: Logging changes to your tax status
+---
+
+The Life Events page (`/life-events`) lets you record changes that affect your tax status — Penzum then automatically applies the correct calculation logic across the Dashboard, the Calculator, and the Obligations calendar.
+
+## Recordable event types
+
+The page only allows events from a **closed list**:
+
+- **Business type change** (part-time ↔ full-time ↔ retired)
+- **Tax form change** (flat-rate ↔ KATA ↔ VSZJA)
+- **Child born** / **Dependent ended**
+- Recording a **marriage**
+- **Disability** start / end
+- **GYED** (childcare fee) start / end
+- **GYES** (childcare allowance) start / end
+- **Sick leave** start / end
+- **Business suspension** start / end
+
+<Info>
+  The page only shows buttons relevant to your current status — e.g. "Record marriage" only appears if you're not already recorded as married.
+</Info>
+
+## Business type change
+
+Effective date, new business type (excluding your current one), and an optional note. An amber warning reminds you that you also need to notify NAV separately — Penzum does not do this on your behalf.
+
+## Tax form change
+
+Effective date and the new tax form. **Important rule:** if switching to or from KATA or VSZJA, the effective date can only be **1 January** — if you pick another date, the system automatically corrects it and warns you.
+
+## Child born / Dependent ended
+
+Date, an optional checkbox if the child has a disability, and a note. This entry updates your dependent count, which is the basis for the family tax benefit calculation.
+
+## Marriage, disability, GYED, GYES, sick leave, business suspension
+
+These all have the same shape: date and an optional note. Marriage can only be recorded once.
+
+## Log
+
+At the bottom of the page, every past event is listed chronologically, with its state transition (e.g. "Part-time → Full-time"), date, and — where relevant — a note about whether an official filing is also required (e.g. with NAV).
+
+<Warning>
+  Life Events does **not** replace the [Employment](/en/employment) page — if you have a job (or its end) at another company, it cannot be recorded here, only on the Employment page.
+</Warning>
