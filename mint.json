@@ -80,7 +80,8 @@
       "pages": [
         "hu/kalkulator",
         "hu/atalany",
-        "hu/kata"
+        "hu/kata",
+        "hu/vszja"
       ]
     },
     {
@@ -160,7 +161,8 @@
       "pages": [
         "en/calculator",
         "en/flat-rate-tax",
-        "en/kata"
+        "en/kata",
+        "en/vszja"
       ]
     },
     {
