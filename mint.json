@@ -12,188 +12,199 @@
     "dark": "#059669"
   },
   "topbarLinks": [
-    { "name": "penzum.app", "url": "https://penzum.app" }
+    {
+      "name": "penzum.app",
+      "url": "https://penzum.app"
+    }
   ],
   "topbarCtaButton": {
     "name": "Belépés",
     "url": "https://penzum.app/login"
   },
   "tabs": [
-    { "name": "Magyar", "url": "hu" },
-    { "name": "English", "url": "en" }
-  ],
-  "anchors": [],
-  "navigation": [
     {
-      "tab": "Magyar",
-      "groups": [
-        {
-          "group": "Kezdeti lépések",
-          "pages": [
-            "hu/intro",
-            "hu/setup",
-            "hu/adoforma",
-            "hu/csomagok"
-          ]
-        },
-        {
-          "group": "Dashboard",
-          "pages": [
-            "hu/dashboard",
-            "hu/hogy-allok",
-            "hu/tipp",
-            "hu/hirek"
-          ]
-        },
-        {
-          "group": "Bevételek",
-          "pages": [
-            "hu/bevetelek",
-            "hu/nav",
-            "hu/szamlazzhu",
-            "hu/billingo",
-            "hu/manualis-szamla"
-          ]
-        },
-        {
-          "group": "Kiadások",
-          "pages": [
-            "hu/kiadasok",
-            "hu/kategoriak"
-          ]
-        },
-        {
-          "group": "Bank",
-          "pages": [
-            "hu/bank",
-            "hu/tranzakciok"
-          ]
-        },
-        {
-          "group": "Adókalkulátor",
-          "pages": [
-            "hu/kalkulator",
-            "hu/atalany",
-            "hu/kata"
-          ]
-        },
-        {
-          "group": "AI Tanácsadó",
-          "pages": [
-            "hu/ai-tanacsado"
-          ]
-        },
-        {
-          "group": "Kötelezettségek",
-          "pages": [
-            "hu/kotelezettsegek"
-          ]
-        },
-        {
-          "group": "Nyilvántartások és riportok",
-          "pages": [
-            "hu/kivet-naplo",
-            "hu/targyi-eszkozok",
-            "hu/penztarkonyv",
-            "hu/munkaviszony",
-            "hu/eletesemenyek",
-            "hu/riportok"
-          ]
-        },
-        {
-          "group": "Fiók és előfizetés",
-          "pages": [
-            "hu/elofizetes",
-            "hu/adatok-torlese"
-          ]
-        }
-      ]
+      "name": "Magyar",
+      "url": "hu"
     },
     {
-      "tab": "English",
-      "groups": [
-        {
-          "group": "Getting Started",
-          "pages": [
-            "en/intro",
-            "en/setup",
-            "en/tax-form",
-            "en/plans"
-          ]
-        },
-        {
-          "group": "Dashboard",
-          "pages": [
-            "en/dashboard",
-            "en/how-am-i-doing",
-            "en/tip",
-            "en/news"
-          ]
-        },
-        {
-          "group": "Income",
-          "pages": [
-            "en/income",
-            "en/nav",
-            "en/szamlazzhu",
-            "en/billingo",
-            "en/manual-invoice"
-          ]
-        },
-        {
-          "group": "Expenses",
-          "pages": [
-            "en/expenses",
-            "en/categories"
-          ]
-        },
-        {
-          "group": "Bank",
-          "pages": [
-            "en/bank",
-            "en/transactions"
-          ]
-        },
-        {
-          "group": "Tax Calculator",
-          "pages": [
-            "en/calculator",
-            "en/flat-rate-tax",
-            "en/kata"
-          ]
-        },
-        {
-          "group": "AI Advisor",
-          "pages": [
-            "en/ai-advisor"
-          ]
-        },
-        {
-          "group": "Obligations",
-          "pages": [
-            "en/obligations"
-          ]
-        },
-        {
-          "group": "Records & Reports",
-          "pages": [
-            "en/withdrawal-log",
-            "en/fixed-assets",
-            "en/cash-book",
-            "en/employment",
-            "en/life-events",
-            "en/reports"
-          ]
-        },
-        {
-          "group": "Account & Billing",
-          "pages": [
-            "en/subscription",
-            "en/delete-data"
-          ]
-        }
-      ]
+      "name": "English",
+      "url": "en"
     }
   ],
+  "anchors": [],
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Magyar",
+        "groups": [
+          {
+            "group": "Kezdeti lépések",
+            "pages": [
+              "hu/intro",
+              "hu/setup",
+              "hu/adoforma",
+              "hu/csomagok"
+            ]
+          },
+          {
+            "group": "Dashboard",
+            "pages": [
+              "hu/dashboard",
+              "hu/hogy-allok",
+              "hu/tipp",
+              "hu/hirek"
+            ]
+          },
+          {
+            "group": "Bevételek",
+            "pages": [
+              "hu/bevetelek",
+              "hu/nav",
+              "hu/szamlazzhu",
+              "hu/billingo",
+              "hu/manualis-szamla"
+            ]
+          },
+          {
+            "group": "Kiadások",
+            "pages": [
+              "hu/kiadasok",
+              "hu/kategoriak"
+            ]
+          },
+          {
+            "group": "Bank",
+            "pages": [
+              "hu/bank",
+              "hu/tranzakciok"
+            ]
+          },
+          {
+            "group": "Adókalkulátor",
+            "pages": [
+              "hu/kalkulator",
+              "hu/atalany",
+              "hu/kata"
+            ]
+          },
+          {
+            "group": "AI Tanácsadó",
+            "pages": [
+              "hu/ai-tanacsado"
+            ]
+          },
+          {
+            "group": "Kötelezettségek",
+            "pages": [
+              "hu/kotelezettsegek"
+            ]
+          },
+          {
+            "group": "Nyilvántartások és riportok",
+            "pages": [
+              "hu/kivet-naplo",
+              "hu/targyi-eszkozok",
+              "hu/penztarkonyv",
+              "hu/munkaviszony",
+              "hu/eletesemenyek",
+              "hu/riportok"
+            ]
+          },
+          {
+            "group": "Fiók és előfizetés",
+            "pages": [
+              "hu/elofizetes",
+              "hu/adatok-torlese"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "English",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "en/intro",
+              "en/setup",
+              "en/tax-form",
+              "en/plans"
+            ]
+          },
+          {
+            "group": "Dashboard",
+            "pages": [
+              "en/dashboard",
+              "en/how-am-i-doing",
+              "en/tip",
+              "en/news"
+            ]
+          },
+          {
+            "group": "Income",
+            "pages": [
+              "en/income",
+              "en/nav",
+              "en/szamlazzhu",
+              "en/billingo",
+              "en/manual-invoice"
+            ]
+          },
+          {
+            "group": "Expenses",
+            "pages": [
+              "en/expenses",
+              "en/categories"
+            ]
+          },
+          {
+            "group": "Bank",
+            "pages": [
+              "en/bank",
+              "en/transactions"
+            ]
+          },
+          {
+            "group": "Tax Calculator",
+            "pages": [
+              "en/calculator",
+              "en/flat-rate-tax",
+              "en/kata"
+            ]
+          },
+          {
+            "group": "AI Advisor",
+            "pages": [
+              "en/ai-advisor"
+            ]
+          },
+          {
+            "group": "Obligations",
+            "pages": [
+              "en/obligations"
+            ]
+          },
+          {
+            "group": "Records & Reports",
+            "pages": [
+              "en/withdrawal-log",
+              "en/fixed-assets",
+              "en/cash-book",
+              "en/employment",
+              "en/life-events",
+              "en/reports"
+            ]
+          },
+          {
+            "group": "Account & Billing",
+            "pages": [
+              "en/subscription",
+              "en/delete-data"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "footerSocials": {}
 }
