@@ -3,21 +3,23 @@ title: Itemised entrepreneurial income tax (VSZJA)
 description: The basics of itemised cost accounting in Penzum
 ---
 
-Itemised entrepreneurial income tax (vállalkozói SZJA / VSZJA) is based on itemised cost accounting — you deduct your actual, receipt-verified costs from revenue, rather than a fixed cost ratio. This requires you to keep your own records: [Withdrawal Log](/en/withdrawal-log), [Fixed Assets](/en/fixed-assets), and — if you have cash transactions — [Cash Book](/en/cash-book).
+Itemised entrepreneurial income tax (vállalkozói SZJA / VSZJA) is based on itemised cost accounting — you deduct your actual, documented costs (for example, with invoices) from revenue, rather than a fixed cost ratio. This requires you to keep your own records: [Withdrawal Log](/en/withdrawal-log), [Fixed Assets](/en/fixed-assets), and — if you have cash transactions — [Cash Book](/en/cash-book).
 
 ## How does Penzum calculate it?
 
-1. **Entrepreneurial income** = revenue − itemised expenses − depreciation
-2. **Entrepreneurial tax base** = income − withdrawal (at least 0)
+1. **Result before withdrawal** = revenue − itemised expenses − depreciation
+2. **Entrepreneurial tax base** = result before withdrawal − withdrawal − the szocho paid on the withdrawal (at least 0). The law calls this the entrepreneurial income, because the withdrawal and the szocho paid on it are also entrepreneurial costs
 3. **9% entrepreneurial income tax** on the tax base
-4. Part of the after-tax income forms an **entrepreneurial dividend base**
+4. The after-tax entrepreneurial income becomes the **entrepreneurial dividend base**. The adjustments listed in the law (for example, deducting investment costs) are not calculated by Penzum
 5. The dividend base is taxed at **15% SZJA + 13% social contribution tax (szocho)** (szocho has an annual cap)
 6. The [withdrawal](/en/withdrawal-log) is taxed separately: **15% SZJA + 18.5% social security contribution (TB) + 13% szocho**
-7. **HIPA** (local business tax, if configured): (revenue − expenses) × your municipality's HIPA rate
+7. **HIPA** (local business tax): Penzum calculates it from the HIPA data you enter (the simplified base or the general method under the law). Until you enter data, HIPA is not included in the totals
+
+If your tax base is below 2% of your entrepreneurial revenue (income minimum), you must choose in your return: either add a supplementary statement, or treat 2% of the revenue as your tax base. Penzum does not calculate this. Consult your accountant.
 
 ## Withdrawal and the TB base
 
-As a full-time sole trader, your TB contribution base is at least the annual minimum wage (or guaranteed minimum wage) — even if your withdrawal is lower. During childcare fee (GYED), childcare allowance (GYES), or sick leave, this minimum doesn't apply, since NEAK covers TB during these periods. For part-time and retired sole traders, TB (and for retirees, szocho too) is only due on the amount actually withdrawn.
+As a full-time sole trader, your monthly TB contribution base is at least the minimum wage (or, if your main activity, which you perform personally, requires at least a secondary education or a secondary-level vocational qualification, the guaranteed wage minimum), even if your withdrawal is lower. You do not have to pay this lower limit for the time you receive sick pay, maternity pay, adoption pay or childcare fee (GYED). The same applies during the childcare allowance (GYES), unless you personally carry on your business during that time. If this applies for only part of a month, the lower limit is reduced pro rata by days. Penzum takes sick pay, maternity pay, adoption pay and GYED into account, but not GYES. For part-time and retired sole traders, TB (and for retirees, szocho too) is only due on the amount actually withdrawn.
 
 ## Social contribution tax (szocho) cap
 
