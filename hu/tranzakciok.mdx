@@ -13,10 +13,10 @@ Minden tranzakcióhoz kategória rendelhető — ugyanazok a kategóriák érhet
 
 | Típus | Kezelés |
 |---|---|
-| Beérkező fizetés | Bevételként jelenik meg |
-| Kimenő fizetés | Kiadásként jelenik meg |
-| Banki díj | Automatikusan külön kiadásrekordként rögzítve |
+| Beérkező fizetés | Számlához párosítható, nem lesz automatikusan bevétel |
+| Kimenő fizetés | Meglévő kiadáshoz párosítható, vagy kiadást hozhatsz létre belőle |
+| Banki díj | Ha a leírása banki díjra utal (például számlavezetési díj), banki díj kategóriát kap; a kiadást a tételből te hozhatod létre |
 
 ## Szinkron gyakorisága
 
-A tranzakciók naponta automatikusan frissülnek. A legutóbbi szinkron ideje a Bank oldal tetején látható.
+A tranzakciók naponta frissülnek (előfizetéshez kötött funkció); a szolgáltató a legfrissebb adatot nem garantálja. A legutóbbi szinkron ideje a Bank oldal tetején látható.

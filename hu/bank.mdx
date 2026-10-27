@@ -3,29 +3,34 @@ title: Bankszámla összekötése
 description: Automatikus tranzakció-import bankszámládról
 ---
 
-<Warning>
-  Ez a funkció hamarosan érkezik minden előfizetőnek. Az alábbi leírás a tervezett működést mutatja be.
-</Warning>
+A bankszámla-összekötés előfizetéshez kötött funkció (a próbaidőszak alatt is elérhető).
 
-A Penzum **kizárólag olvasási hozzáféréssel** csatlakozik a bankszámládhoz — semmilyen tranzakciót nem kezdeményez.
+## Az összekötés lépései
 
-## Tervezett összekötés lépései
+1. A **Bank** menüpontban (vagy a **Beállítások → Bankszámla** kártyán) kattints a **Csatlakoztatás** gombra. A Penzumtól kapsz egy kódot.
+2. A **bankszamlakivonat.hu** partneroldalon csatlakoztasd a bankszámládat (ha még nem tetted), majd a **Számlatörténet megosztása** menüben írd be a Penzumtól kapott kódot, és válaszd ki, mit osztasz meg a Penzummal.
+3. Térj vissza a Penzumba, és kattints a kódot mutató képernyő **Frissítés** gombjára, hogy a Penzum lássa a beírást.
 
-1. Menj a **Beállítások → Bankszámla** kártyához
-2. Válaszd ki a bankodat a listából, és add meg, hogy vállalkozói vagy magánszámláról van szó
-3. A bank saját felületén hagyd jóvá a hozzáférést, egy biztonságos, szabályozott Open Banking partnerkapcsolaton keresztül
-4. Az első import automatikusan elindul, utána naponta frissül
+## Mit kap a Penzum?
+
+A Penzum a Nyíltbankolás Zrt. (bankszamlakivonat.hu) szolgáltatásán keresztül kapja a bankszámlád tranzakcióit és egyenlegét. A regisztrációt és a banki hozzájárulást a szolgáltató felületén adod meg, a megosztást a Penzumnak a Penzumtól kapott kód beírásával engedélyezed.
+
+A Penzum csak számlainformációt kap (tranzakciók, egyenleg), fizetést nem kezdeményez. A banki bejelentkezési adataidat (felhasználónév, jelszó, PIN) a Penzum nem kapja meg és nem tárolja.
+
+## Frissítés
+
+A tranzakciók naponta frissülnek; a szolgáltató a legfrissebb adatot nem garantálja.
 
 ## Támogatott bankok
 
-A Penzum az európai Open Banking szabvány alapján csatlakozik a bankokhoz — OTP, CIB, K&H, Erste, Raiffeisen, MBH, MagNet, Gránit, UniCredit és további bankok.
+A támogatott bankok listáját a bankszamlakivonat.hu felülete mutatja; a lista változhat. Ha a bankod nem szerepel rajta, a bankszámlakivonatot CSV-ben is feltöltheted.
 
-## Adatbiztonság
+## A tranzakciók és a bevétel, kiadás
 
-A banki hozzáférés egy szabályozott, auditált kapcsolaton keresztül történik. A Penzum nem tárolja a banki bejelentkezési adataidat.
+A betöltött tranzakciók nem lesznek automatikusan bevétellé vagy kiadássá: a tételt számlához vagy kiadáshoz párosíthatod, vagy kiadást hozhatsz létre belőle. A Penzum az adószámítást a számláidból és a kiadásaidból végzi.
 
 ## Alternatíva: CSV import
 
-Amíg az automatikus bank szinkron nem elérhető, a bankszámlakivonátodat CSV formátumban manuálisan importálhatod.
+A bankszámlakivonatodat CSV formátumban is importálhatod. Jelenleg a Revolut, az OTP, a Wise és a CIB CSV-formátumát ismeri fel a Penzum.
 
 - [CSV import →](/hu/tranzakciok)

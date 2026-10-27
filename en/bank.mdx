@@ -3,29 +3,34 @@ title: Bank Account Connection
 description: Automatic transaction import from your bank account
 ---
 
-<Warning>
-  This feature is coming soon for every subscriber. The description below outlines the planned functionality.
-</Warning>
+Bank account connection is a subscription feature (available during the trial period as well).
 
-Penzum connects to your bank with **read-only access** — it never initiates transactions.
+## Connection steps
 
-## Planned connection steps
+1. On the **Bank** page (or the **Settings → Bank Account** card), click the **Csatlakoztatás** (Connect) button. Penzum gives you a code.
+2. On the **bankszamlakivonat.hu** partner site, connect your bank account (if you have not done so yet), then enter the code you received from Penzum in the **Számlatörténet megosztása** (Share account history) menu, and choose what you share with Penzum.
+3. Return to Penzum and click the **Frissítés** (Refresh) button on the screen that shows the code, so that Penzum sees that you entered the code.
 
-1. Go to the **Settings → Bank Account** card
-2. Choose your bank from the list, and specify whether it's a business or personal account
-3. Approve access on your bank's own interface, via a secure, regulated Open Banking partner connection
-4. The first import starts automatically, then refreshes daily
+## What does Penzum receive?
+
+Penzum receives the transactions and the balance of your bank account through the service of Nyíltbankolás Zrt. (bankszamlakivonat.hu). You register and give the consent to your bank on the provider's own interface, and you allow the sharing with Penzum by entering the code you received from Penzum.
+
+Penzum receives account information only (transactions and balance) and does not initiate payments. Penzum does not receive or store your online banking login details (username, password, PIN).
+
+## Refresh
+
+Transactions are refreshed daily; the provider does not guarantee the most recent data.
 
 ## Supported banks
 
-Penzum connects to banks via the European Open Banking standard — OTP, CIB, K&H, Erste, Raiffeisen, MBH, MagNet, Gránit, UniCredit, and more.
+The list of supported banks is shown on the bankszamlakivonat.hu interface; the list may change. If your bank is not on it, you can also upload your bank statement as a CSV file.
 
-## Data security
+## Transactions, income and expenses
 
-Bank access happens through a regulated, audited connection. Penzum never stores your bank login credentials.
+Imported transactions do not automatically become income or expenses: you can match an item to an invoice or to an expense, or create an expense from it. Penzum does its tax calculation from your invoices and expenses.
 
-## Alternative: CSV Import
+## Alternative: CSV import
 
-While automatic bank sync is not yet available, you can manually import your bank statement in CSV format.
+You can also import your bank statement in CSV format. Penzum currently recognizes the CSV formats of Revolut, OTP, Wise and CIB.
 
 - [CSV import →](/en/transactions)
