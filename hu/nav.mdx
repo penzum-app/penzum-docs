@@ -14,7 +14,7 @@ A NAV Online Számla integráció lehetővé teszi, hogy a Penzum közvetlenül 
 
 ## 1. lépés — Technikai felhasználó létrehozása
 
-A Penzum egy **technikai felhasználón** keresztül csatlakozik a NAV Online Számla rendszerhez. Ezt te hozod létre, és kizárólag olvasási hozzáférést ad.
+A Penzum egy **technikai felhasználón** keresztül csatlakozik a NAV Online Számla rendszerhez. Ezt te hozod létre. A Penzum ezen keresztül kizárólag lekérdezéseket küld (a számláid letöltését), számlát nem nyújt be és nem módosít.
 
 1. Lépj be a **[onlineszamla.nav.gov.hu](https://onlineszamla.nav.gov.hu)** oldalra a saját NAV-azonosítóddal
 2. A felső menüsorban válaszd a **Felhasználók** menüpontot
@@ -32,7 +32,7 @@ A Penzum egy **technikai felhasználón** keresztül csatlakozik a NAV Online Sz
 
 ### Szükséges jogosultság
 
-A technikai felhasználó létrehozásakor a **Számlák kezelése** jogosultságot add meg. Ez elegendő a szinkronhoz — más jogosultság nem szükséges.
+A technikai felhasználó létrehozásakor pipáld be a **Számlák kezelése** ÉS a **Számlák lekérdezése** jogosultságot. A „Saját számlák lekérdezése” opciót NE jelöld be, mert kizárja a lekérdezést. Ha a technikai felhasználó ezek nélkül jött létre, hozz létre egy újat a helyes jogosultságokkal.
 
 ## 2. lépés — Összekötés a Penzumban
 

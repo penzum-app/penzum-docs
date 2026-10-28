@@ -14,7 +14,7 @@ The NAV Online Invoice integration allows Penzum to pull your issued and receive
 
 ## Step 1 — Create a Technical User
 
-Penzum connects via a **technical user** that you create in NAV's system. It grants read-only access.
+Penzum connects via a **technical user** that you create in NAV's system. Through it, Penzum only sends queries (downloading your invoices); it does not submit or modify any invoice.
 
 1. Log in at **[onlineszamla.nav.gov.hu](https://onlineszamla.nav.gov.hu)** with your NAV credentials
 2. In the top menu, select **Felhasználók** (Users)
@@ -32,7 +32,7 @@ Penzum connects via a **technical user** that you create in NAV's system. It gra
 
 ### Required Permission
 
-When creating the technical user, select the **Számlák kezelése** (Invoice Management) permission. This is sufficient for the sync — no other permissions are needed.
+When creating the technical user, tick both **Számlák kezelése** (Invoice Management) and **Számlák lekérdezése** (Invoice Query). Do NOT tick "Saját számlák lekérdezése" (Own Invoice Query), because it excludes querying. If the technical user was created without these, create a new one with the correct permissions.
 
 ## Step 2 — Connect in Penzum
 
